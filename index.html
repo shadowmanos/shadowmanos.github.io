@@ -1,55 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Manos Nikolaidis</title>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/darcula.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+	<meta charset="UTF-8">
+	<title>Manos Nikolaidis</title>
 </head>
 <body>
+
+<img src="https://avatars3.githubusercontent.com/u/5346908?v=3&amp;s=460"
+	 class="avatar width-full rounded-2"
+	 width="230" height="230"
+	 alt="Mugshot">
+
 <h1>Manos Nikolaidis</h1>
 <h2>Software Engineer</h2>
-<pre><code class="java">
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Properties;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+<h4>You can find me at:</h4>
 
-class TokenizePos {
-    private static final StanfordCoreNLP pipeline;
+<a href="#">
+	<img src="https://www.codewars.com/users/shadowmanos/badges/large"/>
+</a>
 
-    static {
-        final Properties props = new Properties();
+<a href="https://twitter.com/shadowmanos"
+   class="twitter-follow-button"
+   data-show-count="false">
+	Follow @shadowmanos
+</a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-        // tokenize: split the text in tokens (words and punctuation)
-        // ssplit: group the above tokens in sentences according to punctuation
-        // pos: tags words as nouns, verbs etc
-        props.put("annotators", "tokenize ssplit pos");
+<a href="http://stackoverflow.com/users/1413133/manos-nikolaidis">
+	<img src="http://stackoverflow.com/users/flair/1413133.png?theme=dark"
+		 width="208" height="58"
+		 alt="profile for Manos Nikolaidis at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+		 title="profile for Manos Nikolaidis at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
 
-        // initialize the processing engine for the above annotators
-        pipeline = new StanfordCoreNLP(props);
-    }
-
-    public static void main(String[] args) throws IOException {
-        // an appropriate sample text for starting our journey
-        final String text = "Space: the final frontier. " +
-            "These are the voyages of the starship Enterprise. " +
-            "Its continuing mission: to explore strange new worlds, " +
-            "to seek out new life and new civilizations, " +
-            "to boldly go where no one has gone before.";
-
-        // the Annotation instance, containing both input and output of the processing
-        final Annotation document = new Annotation(text);
-
-        // process the text and store the result in Annotation instance
-        pipeline.annotate(document);
-
-        // output the annotation at stdout as a JSON
-        pipeline.jsonPrint(document, new PrintWriter(System.out));
-    }
-}
-</code></pre>
 </body>
 </html>
