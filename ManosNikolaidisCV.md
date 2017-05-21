@@ -8,12 +8,12 @@
 
 I create microservices with *Java SE 8* as a member of the backend team. The main functionality is to
 record all match events (goals, red cards, substitutions etc) from a data feed and provide aggregated stats for teams,
-players and competitions. I've been involved in the official websites for [Premier League](www.premierleague.com)
-and [World Rugby](www.worldrugby.org) and also supported the pertinent mobile apps.
+players and competitions. I've been involved in the official websites for [Premier League](https://www.premierleague.com)
+and [World Rugby](http://www.worldrugby.org) and also supported the pertinent mobile apps.
 These are high traffic websites, so optimizing SQL queries and caching are prominent activities.
-I have also dealt with push notifications for mobile apps,
-secure login in websites and software clients for external APIs. I typically deal directly with product
-management, creative, front-end departments and external partners.
+I have also dealt with push notifications for mobile apps, secure login in websites and software clients
+for external APIs. I typically deal directly with product management, creative, front-end departments
+and external partners.
 
 Other tech we use includes *Spring-Boot, Hibernate, MySQL, thrift, Maven, Linux* and about
 half the services provided by *AWS*.
@@ -42,9 +42,9 @@ sub-millisecond latency which in turn required some Linux black magic, like pinn
 real-time thread scheduling, locking memory before the control loop started and other low-level stuff.
 This was implemented in *C++*, while *Python* was used for some coordination and monitoring tasks without low-latency requirements.
 
-I mostly worked on Shadow's flagship product the [Dexterous Hand](www.shadowrobot.com/products/dexterous-hand)
+I mostly worked on Shadow's flagship product the [Dexterous Hand](https://www.shadowrobot.com/products/dexterous-hand)
 and secondarily on [RoNeX](https://www.shadowrobot.com/ronex-available-for-pre-order/).
-I was involved in the [Moley robot chef](www.bbc.co.uk/news/science-environment-32282131) project, where I wrote the software that
+I was involved in the [Moley robot chef](https://www.bbc.co.uk/news/science-environment-32282131) project, where I wrote the software that
 coordinated in real-time (1 KHz rate) the motion of 4 robots (2 hands and 2 arms). I proudly represented
 Shadow at [Ros Kong 2014](https://events.osrfoundation.org/ros-kong-2014/) including a lightning talk.
 Some of the code I contributed to is open source at Github. E.g. [ros_ethercat](https://github.com/shadow-robot/ros_ethercat)
