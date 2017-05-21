@@ -1,9 +1,9 @@
-### Manos Nikolaidis
+# Manos Nikolaidis
 ##### Software Engineer
-##
-#### Professional Experience
 
-###### [Pulselive Ltd](http://pulselive.com/)
+## Professional Experience
+
+#### [Pulselive Ltd](http://pulselive.com/)
 *London, UK (February 2016 – now)*
 
 
@@ -18,7 +18,7 @@ Other tech we use includes *Spring, Hibernate, MySQL, thrift, Maven and Linux*. 
 half the services provided by *AWS* including container service (*Docker*).
 
 
-###### Pilotware Ltd
+#### Pilotware Ltd
 *London, UK (February 2015 – February 2016)*
 
 I designed and developed a service for Natural Language Processing. The input was text in English and
@@ -32,7 +32,7 @@ with a dedicated sysadmin for deployment, monitoring etc.
 Tech used included *JavaSE 8, CoreNLP, Maven, ActiveMQ, Linux.*
 
 
-###### [Shadow Robot Company Ltd](https://www.shadowrobot.com)
+#### [Shadow Robot Company Ltd](https://www.shadowrobot.com)
 *London, UK (August 2013 – February 2015)*
 
 I designed and developed software for real-time control of anthropomorphic robots.
@@ -50,7 +50,7 @@ Shadow at [Ros Kong 2014](https://events.osrfoundation.org/ros-kong-2014/) inclu
 Some of the code I contributed to is open source at Github. E.g. [ros_ethercat](https://github.com/shadow-robot/ros_ethercat)
 Tech we used included *ROS, Boost, Eigen, libuv, Pthreads, MongoDB, Linux*
 
-###### [Inos Automationssoftware GmbH](http://www.inos-automation.de/index.php/en/)
+#### [Inos Automationssoftware GmbH](http://www.inos-automation.de/index.php/en/)
 *Athens, Greece – Stuttgart, Germany (April 2008 – August 2013)*
 
 I wrote software in *C++* for PC-based, robotic vision applications in the automotive industry.
@@ -70,7 +70,7 @@ depending on USB dongles.
 Tech we used included *Boost, MySQL, Qt, Git, Windows SDK*.
 
 
-###### Independent Contractor
+#### Independent Contractor
 *Volos, Greece (May 2004 – March 2008)*
 
 I cooperated with various integrators around my home town on industrial machinery projects.
@@ -83,8 +83,8 @@ had to be displayed in real-time representing object's shape and the cutting too
 Projects included a 2D plasma cutter for metal sheets and machine cutting and drilling large steel beams
 (girders) as used in metal buildings.
 
-##
-#### Education
+
+## Education
 *MEng [Mechanical Engineering University of Patras](http://www.mead.upatras.gr/lang_en/)*
 
 
