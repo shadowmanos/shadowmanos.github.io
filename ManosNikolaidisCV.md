@@ -8,11 +8,13 @@
 
 I create microservices with *Java SE 8* as a member of the backend team. The main functionality is to
 record all match events (goals, red cards, substitutions etc) from a data feed and provide aggregated stats for teams,
-players and competitions. I've been involved in www.premierleague.com and www.worldrugby.org/ and also
-supported the pertinent mobile apps. These are high traffic websites, so optimizing SQL queries and
-caching are prominent activities. I have also dealt with push notifications for mobile apps,
+players and competitions. I've been involved in the official websites for [Premier League](www.premierleague.com)
+and [World Rugby](www.worldrugby.org) and also supported the pertinent mobile apps.
+These are high traffic websites, so optimizing SQL queries and caching are prominent activities.
+I have also dealt with push notifications for mobile apps,
 secure login in websites and software clients for external APIs. I typically deal directly with product
 management, creative, front-end departments and external partners.
+
 Other tech we use includes *Spring-Boot, Hibernate, MySQL, thrift, Maven, Linux* and about
 half the services provided by *AWS*.
 
@@ -27,6 +29,7 @@ I came up with an architecture composed of multiple instances in different serve
 configuration at runtime. I was also tasked with leading a small team around this project, including a
 front-end engineer and a few research scientists. All services ran at in-house servers and I cooperated
 with a dedicated sysadmin for deployment, monitoring etc.
+
 Tech used included *JavaSE 8, CoreNLP, Maven, ActiveMQ, Linux.*
 
 #### [Shadow Robot Company Ltd](https://www.shadowrobot.com)
@@ -45,6 +48,7 @@ I was involved in the [Moley robot chef](www.bbc.co.uk/news/science-environment-
 coordinated in real-time (1 KHz rate) the motion of 4 robots (2 hands and 2 arms). I proudly represented
 Shadow at [Ros Kong 2014](https://events.osrfoundation.org/ros-kong-2014/) including a lightning talk.
 Some of the code I contributed to is open source at Github. E.g. [ros_ethercat](https://github.com/shadow-robot/ros_ethercat)
+
 Tech we used included *ROS, Boost, Eigen, libuv, Pthreads, MongoDB, Linux*
 
 #### [Inos Automationssoftware GmbH](http://www.inos-automation.de/index.php/en/)
@@ -64,6 +68,7 @@ at the Audi KLT Depalletizing project and the KUKA USPS project. Both involved r
 at automated warehouses. Our robot vision guidance system processed data from 3D laser scanners and
 digital cameras to find the boxes on the pallets. At some point, I also wrote copy-protection software
 depending on USB dongles.
+
 Tech we used included *Boost, PCL, MySQL, Qt, Git, Windows SDK*.
 
 #### Independent Contractor
@@ -80,12 +85,18 @@ Projects included a 2D plasma cutter for metal sheets and a machine cutting and 
 used in metal buildings.
 
 ## Education
-*MEng [Mechanical Engineering University of Patras](http://www.mead.upatras.gr/lang_en/)*
+#### [MSc Mechanical Engineering University of Patras](http://www.mead.upatras.gr/lang_en/)
 
-Selected courses pertinent to control systems, statistics, time-series and robotics. Lot's of math problems
-solved on computers.
+Selected courses pertinent to control systems, statistics, time-series and robotics. Lots of math problem
+solving with computers.
 
 Master thesis : *"Simulation and control of robotic manipulators with elastic links"*. Wrote software
-in C++ to implement simulation and control algorithms. Heavy use of linear algebra and 3D transformations.
+in *C++* to implement simulation and control algorithms. Heavy use of linear algebra and 3D transformations.
 Due to heavy computations involved and my slow computer, spent a lot of time manually optimizing code and
-also used profile guided optimization as provided by Visual C++.
+also used profile guided optimization as provided by *Visual C++*.
+
+#### Military Service
+*May 2003 - May 2004*
+
+Compulsory military service in the Greek Army. I was selected to serve in the Military Police, with a rank
+of Sergeant. Most likely, by an SQL query that didn't perform very well.
