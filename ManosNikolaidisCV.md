@@ -1,7 +1,6 @@
----
-title: Manos Nikolaidis
----
-#### Software Engineer
+# Manos Nikolaidis
+### Software Engineer
+
 
 ## Professional Experience
 
