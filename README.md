@@ -1,6 +1,3 @@
-### Manos Nikolaidis
-#### Software Engineer
-
 Hi
 
 I am a software engineer based in London, currently busy building microservices, that expose REST APIs and

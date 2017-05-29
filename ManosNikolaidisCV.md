@@ -1,6 +1,3 @@
-# Manos Nikolaidis
-#### Software Engineer
-
 ## Professional Experience
 
 #### [Pulselive Ltd](http://pulselive.com/)
