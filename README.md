@@ -9,7 +9,8 @@ I have a Master in Mechanical Engineering of all things, where I was initially e
 advanced math calculations with C++. I am excited about software with low-latency and high performance requirements.
 I am easily bored with tedious tasks and like to automate everything.
 
-You can find my [CV here](ManosNikolaidisCV.md)
+You can find my [CV here](ManosNikolaidisCV.md). I have put some blog posts about [NLP here]() and more generally
+about [programming with Java here]().
 
 You may also find me at [StackOverflow](http://stackoverflow.com/users/1413133/manos-nikolaidis),
 [LinkedIn](https://www.linkedin.com/in/manosnikolaidis/) and [Twitter](https://twitter.com/shadowmanos)
