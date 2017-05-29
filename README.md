@@ -7,7 +7,6 @@ advanced math calculations with C++. I am excited about software with low-latenc
 I am easily bored with tedious tasks and like to automate everything.
 
 You can find my [CV here](ManosNikolaidisCV.md).
-I have put some blog posts about [NLP here](https://shadowmanos.github.io/nlp-blog).
 
 You may also find me at [StackOverflow](https://stackoverflow.com/users/1413133/manos-nikolaidis),
 [LinkedIn](https://www.linkedin.com/in/manosnikolaidis) and [Twitter](https://twitter.com/shadowmanos)
