@@ -69,11 +69,11 @@ Tech we used included *Boost, PCL, MySQL, Qt, Git, Windows SDK*.
 *Volos, Greece (May 2004 – March 2008)*
 
 I cooperated with various integrators around my home town on industrial machinery projects.
-They built a machine in their workshop and installed on the customer's site and I was contracted to write
+They built and installed a machine cutting metal/stone/wood etc and I was contracted to write
 software for a PC to control and monitor this machine. Software was desktop applications
 written in *C++* with frameworks like *Qt*. Apart from communicating with a machine, 2D graphics
-had to be displayed in real-time representing an object's shape and the cutting tool's path. At least
-2 threads were involved per application.
+had to be displayed in real-time representing an object's shape and the cutting tool's path.
+My first exposure to multi-threading and it mostly went well.
 
 Projects included a 2D plasma cutter for metal sheets and a machine cutting and drilling large steel beams
 used in metal buildings.
@@ -81,13 +81,13 @@ used in metal buildings.
 ## Education
 #### [MSc Mechanical Engineering University of Patras](http://www.mead.upatras.gr/lang_en/)
 
-Selected courses pertinent to control systems, statistics, time-series and robotics. Lots of math problem
-solving with computers.
+Selected courses pertinent to control systems, statistics, time-series and robotics.
+Studied numeric methods for things like differential equations and nonlinear optimization.
 
-Master thesis : *"Simulation and control of robotic manipulators with elastic links"*. Wrote software
+Master thesis: *"Simulation and control of robotic manipulators with elastic links"*. Wrote software
 in *C++* to implement simulation and control algorithms. Heavy use of linear algebra and 3D transformations.
-Due to heavy computations involved and my slow computer, spent a lot of time manually optimizing code and
-also used profile guided optimization as provided by *Visual C++*.
+Due to heavy computations involved (and my slow PC!), spent a lot of time manually optimizing code and
+even used profile guided optimization as provided by *Visual C++*.
 
 #### Military Service
 *May 2003 - May 2004*
