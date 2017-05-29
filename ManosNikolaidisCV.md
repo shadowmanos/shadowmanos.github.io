@@ -6,31 +6,28 @@
 #### [Pulselive Ltd](http://pulselive.com/)
 *London, UK (February 2016 – now)*
 
-I create microservices with *Java SE 8* as a member of the backend team. The main functionality is to
+I create microservices with *Java 8* in support of sports websites and mobile apps. The main functionality is to
 record all match events (goals, red cards, substitutions etc) from a data feed and provide aggregated stats for teams,
 players and competitions. I've been involved in the official websites for [Premier League](https://www.premierleague.com)
-and [World Rugby](http://www.worldrugby.org) and also supported the pertinent mobile apps.
+and [World Rugby](http://www.worldrugby.org) and the pertinent mobile apps.
 These are high traffic websites, so optimizing SQL queries and caching are prominent activities.
-I have also dealt with push notifications for mobile apps, secure login in websites and software clients
-for external APIs. I typically deal directly with product management, creative, front-end departments
-and external partners.
+I have also dealt with push notifications for mobile apps and secure login in websites.
+I typically deal directly with product management, creative, front-end departments and external partners.
 
-Other tech we use includes *Spring-Boot, Hibernate, MySQL, thrift, Maven, Linux* and about
+Out tech stack includes *Spring-Boot, Hibernate, MySQL, thrift, Maven, Linux* and about
 half the services provided by *AWS*.
 
 #### Pilotware Ltd
 *London, UK (February 2015 – February 2016)*
 
-I designed and developed a service for Natural Language Processing. The input was text in English and
+I designed and developed a software service for Natural Language Processing. The input was text in English and
 the output an XML document with information extracted from the text. NLP was based on the CoreNLP library
-from Stanford University and the functionality was quite more advanced than what is achievable with regex or sentiment analysis.
-To provide the required latency and throughput and allow software updates on a running system without downtime,
-I came up with an architecture composed of multiple instances in different servers behind a load balancer and messaging to update
-configuration at runtime. I was also tasked with leading a small team around this project, including a
-front-end engineer and a few research scientists. All services ran at in-house servers and I cooperated
-with a dedicated sysadmin for deployment, monitoring etc.
+from Stanford University and the functionality was a level above regex or sentiment analysis.
+I came up with and implemented a message broker based architecture for load balancing and live updates without downtime.
+I was also tasked with leading a small team around this project, including a front-end engineer and a few research scientists.
+All services ran at in-house servers and I cooperated with a dedicated sysadmin for deployment, monitoring etc.
 
-Tech used included *JavaSE 8, CoreNLP, Maven, ActiveMQ, Linux.*
+The tech stack included *Java 8, CoreNLP, Maven, ActiveMQ, Linux.*
 
 #### [Shadow Robot Company Ltd](https://www.shadowrobot.com)
 *London, UK (August 2013 – February 2015)*
@@ -39,7 +36,7 @@ I designed and developed software for real-time control of anthropomorphic robot
 That was PC-based control, in the sense that a server running *Linux* received (*TCP/IP*) the current position of the robot,
 compared with the desired motion it should perform and issued new position commands. This required
 sub-millisecond latency which in turn required some Linux black magic, like pinning threads to CPU cores,
-real-time thread scheduling, locking memory before the control loop started and other low-level stuff.
+real-time thread scheduling, locking memory at start up and other low-level stuff.
 This was implemented in *C++*, while *Python* was used for some coordination and monitoring tasks without low-latency requirements.
 
 I mostly worked on Shadow's flagship product the [Dexterous Hand](https://www.shadowrobot.com/products/dexterous-hand)
@@ -49,7 +46,7 @@ coordinated in real-time (1 KHz rate) the motion of 4 robots (2 hands and 2 arms
 Shadow at [Ros Kong 2014](https://events.osrfoundation.org/ros-kong-2014/) including a lightning talk.
 Some of the code I contributed to is open source at Github. E.g. [ros_ethercat](https://github.com/shadow-robot/ros_ethercat)
 
-Tech we used included *ROS, Boost, Eigen, libuv, Pthreads, MongoDB, Linux*
+The tech stack included *ROS, Boost, Eigen, libuv, Pthreads, MongoDB, Linux*
 
 #### [Inos Automationssoftware GmbH](http://www.inos-automation.de/index.php/en/)
 *Athens, Greece – Stuttgart, Germany (April 2008 – August 2013)*
@@ -57,7 +54,7 @@ Tech we used included *ROS, Boost, Eigen, libuv, Pthreads, MongoDB, Linux*
 I wrote software in *C++* for robotic vision applications in the automotive industry.
 That was PC-based robot control software, running on a server connected (*TCP/IP*) to digital cameras,
 other sensors, industrial robotic manipulators and other servers in the factory including databases.
-I was mostly involved in the core libraries and the "state machine" that coordinated all other
+I mostly worked on the core libraries and the "state machine" that coordinated all other
 systems connected to our servers and internal libraries for computer vision. The "state machine"
 typically employed a thread, a socket and a config file per other system connected.
 I regularly travelled from our R&D department at Athens to factories around our sales and support center at Stuttgart.
