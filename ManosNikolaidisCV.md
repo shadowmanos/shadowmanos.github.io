@@ -7,8 +7,8 @@ I create microservices with *Java 8* in support of sports websites and mobile ap
 record all match events (goals, red cards, substitutions etc) from a data feed and provide aggregated stats for teams,
 players and competitions. I've been involved in the official websites for [Premier League](https://www.premierleague.com)
 and [World Rugby](http://www.worldrugby.org) and the pertinent mobile apps.
-These are high traffic websites, so optimizing SQL queries and caching are prominent activities.
-I have also dealt with push notifications for mobile apps and secure login in websites.
+These are high traffic websites with autoscaling and no downtime. Optimizing SQL queries and caching are prominent activities.
+I have also implemented push notifications for mobile apps and secure login for websites.
 I typically deal directly with product management, creative, front-end departments and external partners.
 
 Out tech stack includes *Spring-Boot, Hibernate, MySQL, thrift, Maven, Linux* and about
@@ -22,7 +22,7 @@ the output an XML document with information extracted from the text. NLP was bas
 from Stanford University and the functionality was a level above regex or sentiment analysis.
 I came up with and implemented a message broker based architecture for load balancing and live updates without downtime.
 I was also tasked with leading a small team around this project, including a front-end engineer and a few research scientists.
-All services ran at in-house servers and I cooperated with a dedicated sysadmin for deployment, monitoring etc.
+All services ran at in-house servers and I setup automation for testing and deployment.
 
 The tech stack included *Java 8, CoreNLP, Maven, ActiveMQ, Linux.*
 
