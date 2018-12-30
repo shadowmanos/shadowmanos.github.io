@@ -3,11 +3,12 @@
 #### [Callsign Ltd](https://callsign.com)
 *London, UK (January 2018 – now)*
 
-Tech Lead of the Identity and Access Management team. Design and build repositories for users, admins, groups etc.
+Tech Lead of the Identity and Access Management team. Design and build a datastore and REST API for users, admins, groups etc.
 Requirements for low latency, high availability and security. Small team with other Java devs, front-end and QA.
 Using various standards for APIs like [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) and [SCIM](https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management).
+Involved in recruiting Java developers.
 
-Tech stack: *Java 8, Spring-Boot (MVC, Data, Security), Hazelcast, PostgreSQL, ANTLR*
+Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, PostgreSQL, ANTLR*
 
 #### [Pulselive Ltd](https://www.pulselive.com)
 *London, UK (February 2016 – December 2017)*
@@ -19,7 +20,7 @@ Optimizing slow SQL queries, improving caching and deploying new versions to AWS
 I have also implemented push notifications for mobile apps and authentication for websites.
 Dealt directly with product management, creative, front-end engineers and external partners.
 
-Tech stack: *Java 8, Spring-Boot (MVC, Data, Batch), Hibernate, MySQL, thrift* and about half the services provided by *AWS*.
+Tech stack: *Java, Spring-Boot (MVC, Data, Batch), Hibernate, MySQL, thrift* and about half the services provided by *AWS*.
 
 #### Pilotware Ltd
 *London, UK (February 2015 – February 2016)*
@@ -30,7 +31,7 @@ NLP was based on the CoreNLP library from Stanford University and functionality 
 Since everything ran on on-premises servers, I came up with and implemented a message queues and pub/sub based architecture for load balancing and live updates without downtime.
 I led the small team tasked to deliver this project, including a front-end engineer and a few research scientists.
 
-Tech stack: *Java 8, CoreNLP, Maven, ActiveMQ, Linux.*
+Tech stack: *Java, CoreNLP, Maven, ActiveMQ, Linux.*
 
 #### [Shadow Robot Company Ltd](https://www.shadowrobot.com)
 *London, UK (August 2013 – February 2015)*
