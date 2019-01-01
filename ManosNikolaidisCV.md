@@ -3,24 +3,25 @@
 #### [Callsign Ltd](https://callsign.com)
 *London, UK (January 2018 – now)*
 
-Tech Lead of the Identity and Access Management team. Design and build a datastore and REST API for users, admins, groups etc.
-Requirements for low latency, high availability and security. Small team with other Java devs, front-end and QA.
+Tech Lead of the Identity and Access Management team. Design and build a secure datastore and REST API for users, admins, groups etc.
+Requirements for low latency around 10ms, 5 nines availability and around 20 million end users. Small team with other Java devs, front-end and QA.
 Using various standards for APIs like [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) and [SCIM](https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management).
 Involved in recruiting Java developers.
 
-Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, PostgreSQL, ANTLR*
+Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, PostgreSQL, ANTLR, Docker*
 
 #### [Pulselive Ltd](https://www.pulselive.com)
 *London, UK (February 2016 – December 2017)*
 
-Worked on backend services to support sports websites and mobile apps including [Premier League](https://www.premierleague.com) and [World Rugby](https://www.world.rugby).
+Worked on backend services to provide data to sports websites and mobile apps including [Premier League](https://www.premierleague.com) and [World Rugby](https://www.world.rugby).
+The premier league mobile app has 5 million downloads and the website has equivalent traffic.
 We processed a real time data feed with all match events (goals, red cards, substitutions etc) and
-through our REST API we provided both single events and aggregated stats for teams, players and competitions.
+through our REST API we provided both single events as they happened and aggregated stats for teams, players and competitions.
 Optimizing slow SQL queries, improving caching and deploying new versions to AWS were daily activities.
 I have also implemented push notifications for mobile apps and authentication for websites.
 Dealt directly with product management, creative, front-end engineers and external partners.
 
-Tech stack: *Java, Spring-Boot (MVC, Data, Batch), Hibernate, MySQL, thrift* and about half the services provided by *AWS*.
+Tech stack: *Java, Spring-Boot (MVC, Data, Batch), Hibernate, MySQL, thrift, Docker* and about half the services provided by *AWS*.
 
 #### Pilotware Ltd
 *London, UK (February 2015 – February 2016)*
