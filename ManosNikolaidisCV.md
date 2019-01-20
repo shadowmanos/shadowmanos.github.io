@@ -8,7 +8,7 @@ Requirements for low latency around 10ms, 5 nines availability and more than 20 
 Using various standards for APIs like [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) and [SCIM](https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management).
 Involved in recruiting other Java platform engineers.
 
-Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, PostgreSQL, ANTLR, Docker, Gatling, nginx*
+Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, PostgreSQL, Liquibase, ANTLR, Docker, Gatling, nginx*
 
 #### [Pulselive Ltd](https://www.pulselive.com)
 *London, UK (February 2016 – December 2017)*
