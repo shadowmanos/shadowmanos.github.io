@@ -3,25 +3,25 @@
 #### [Callsign Ltd](https://callsign.com)
 *London, UK (January 2018 – now)*
 
-Tech Lead of the Identity and Access Management team. Design and build a secure datastore and REST API for users, admins, groups etc.
-Requirements for low latency around 10ms, 5 nines availability and around 20 million end users. Small team with other Java devs, front-end and QA.
+Tech Lead of the Identity and Access Management team. Design and build a secure datastore and REST API for users, admins, groups, permissions etc.
+Requirements for low latency around 10ms, 5 nines availability and more than 20 million end users. Small team with other Java devs, front-end and QA.
 Using various standards for APIs like [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) and [SCIM](https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management).
-Involved in recruiting Java developers.
+Involved in recruiting other Java platform engineers.
 
-Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, PostgreSQL, ANTLR, Docker*
+Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, PostgreSQL, ANTLR, Docker, Gatling, nginx*
 
 #### [Pulselive Ltd](https://www.pulselive.com)
 *London, UK (February 2016 – December 2017)*
 
 Worked on backend services to provide data to sports websites and mobile apps including [Premier League](https://www.premierleague.com) and [World Rugby](https://www.world.rugby).
-The premier league mobile app has 5 million downloads and the website has equivalent traffic.
+The premier league mobile app has 5 million downloads and combined with web traffic results in 100s of millions of requests on match day.
 We processed a real time data feed with all match events (goals, red cards, substitutions etc) and
 through our REST API we provided both single events as they happened and aggregated stats for teams, players and competitions.
-Optimizing slow SQL queries, improving caching and deploying new versions to AWS were daily activities.
+Optimizing slow SQL queries, improving multiple layers of caching and deploying new versions to AWS were daily activities.
 I have also implemented push notifications for mobile apps and authentication for websites.
 Dealt directly with product management, creative, front-end engineers and external partners.
 
-Tech stack: *Java, Spring-Boot (MVC, Data, Batch), Hibernate, MySQL, thrift, Docker* and about half the services provided by *AWS*.
+Tech stack: *Java, Spring-Boot (MVC, Data, Batch), MySQL, thrift, Docker, nginx* and about half the services provided by *AWS*.
 
 #### Pilotware Ltd
 *London, UK (February 2015 – February 2016)*
@@ -32,7 +32,7 @@ NLP was based on the CoreNLP library from Stanford University and functionality 
 Since everything ran on on-premises servers, I came up with and implemented a message queues and pub/sub based architecture for load balancing and live updates without downtime.
 I led the small team tasked to deliver this project, including a front-end engineer and a few research scientists.
 
-Tech stack: *Java, CoreNLP, Maven, ActiveMQ, Linux.*
+Tech stack: *Java, CoreNLP, Jackson, ActiveMQ*
 
 #### [Shadow Robot Company Ltd](https://www.shadowrobot.com)
 *London, UK (August 2013 – February 2015)*
@@ -51,7 +51,7 @@ coordinated in real-time (1 KHz rate) the motion of 4 robots (2 hands and 2 arms
 I proudly represented Shadow at [Ros Kong 2014](https://events.osrfoundation.org/ros-kong-2014) including a lightning talk.
 Some of the code I contributed to is open source at Github. E.g. [ros_ethercat](https://github.com/shadow-robot/ros_ethercat)
 
-Tech stack: *C++, Python, ROS, Boost, Eigen, libuv, Pthreads, MongoDB, Linux*
+Tech stack: *C++, Python, ROS, Boost, Eigen, libuv, Pthreads, MongoDB*
 
 #### [Inos Automationssoftware GmbH](https://www.inos-automation.de/home)
 *Athens, Greece – Stuttgart, Germany (April 2008 – August 2013)*
