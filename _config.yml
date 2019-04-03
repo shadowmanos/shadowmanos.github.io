@@ -11,7 +11,6 @@ social:
     - https://stackoverflow.com/users/1413133/manos-nikolaidis
     - https://twitter.com/shadowmanos
     - https://www.codewars.com/users/shadowmanos
-google_analytics: UA-100116726-1
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
