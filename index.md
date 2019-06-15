@@ -11,4 +11,4 @@ You may also find me at
 [LinkedIn](https://www.linkedin.com/in/manosnikolaidis) and
 [Twitter](https://twitter.com/shadowmanos)
 
-Not that I expect anyone to care, but my main hobby is electric guitar 🤘I cycle everywhere in London regardless of weather.
+Not that I expect anyone to care, but my main hobby is electric guitar and 🤘I cycle everywhere in London regardless of weather.
