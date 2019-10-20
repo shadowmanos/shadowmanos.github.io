@@ -7,10 +7,9 @@ twitter:
 social:
   name: Manos Nikolaidis
   links:
-    - https://www.linkedin.com/in/manosnikolaidis
     - https://stackoverflow.com/users/1413133/manos-nikolaidis
     - https://twitter.com/shadowmanos
-    - https://www.codewars.com/users/shadowmanos
+    - https://www.linkedin.com/in/manosnikolaidis
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
