@@ -4,9 +4,9 @@
 ##### Provider of jovial playspots for surveys, games and o2o in retail stores.
 *London, UK (March 2019 — now)*
 
-I maintain and upgrade the backend and datastores of our platform that supports and collects data from our playspots (android tables), and some internal tools to manage campaigns. Campaigns in USA, UK, Japan and China involving 10000 of playspots. A DevOps role requiring regular use of AWS console and managing users, roles and permissions in Keycloak as well as coding.
+I maintain and upgrade the backend and datastores of our platform that supports and collects data from our playspots (android tables), and some internal tools to manage campaigns. Campaigns in USA, UK, Japan and China involving 10000 of playspots. A DevOps role requiring regular use of AWS console and managing users, roles and permissions in Keycloak as well as coding. Upgraded legacy services from Hibernate and XML to Spring Data and JPA annotations. Moved services to Java 11. Built a Natural Language Processing service. 
 
-Tech stack: *Java, Spring-Boot (MVC, Data, Security), elasticsearch, MySQL, flyway, ANTLR, Docker, nginx, Keycloak*
+Tech stack: *Java, Spring-Boot (MVC, Data, Security), elasticsearch, MySQL, flyway, ANTLR, Docker, nginx, Keycloak, Splunk, Jenkins*
 
 #### [Callsign Ltd](https://callsign.com)
 ##### Machine learning powered authorization service and mobile app  
@@ -14,7 +14,7 @@ Tech stack: *Java, Spring-Boot (MVC, Data, Security), elasticsearch, MySQL, flyw
 
 Tech Lead of the Identity and Access Management team. Design and build a secure datastore and REST API for users, groups, roles, permissions etc. Requirements for low latency around 10ms, 5 nines availability and more than 20 million end users. System offers single sing on functionality with fine-grained authorization. Small team with other Java devs, front-end and QA. Using various standards for APIs like [OAuth2](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0) and [SCIM](https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management). Involved in recruiting other Java platform engineers.
 
-Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, MySQL, Liquibase, ANTLR, Docker, JMeter, nginx, Keycloak*
+Tech stack: *Java, Spring-Boot (MVC, Data, Security), Hazelcast, MySQL, Liquibase, ANTLR, Docker, JMeter, nginx, Keycloak, Gitlab*
 
 #### [Pulselive Ltd](https://www.pulselive.com)
 ##### Most prominent creator of web and mobile apps for sports organisations in the UK 
