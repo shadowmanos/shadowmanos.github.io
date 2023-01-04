@@ -1,51 +1,9 @@
-$darkest-color:{
-{
-.Site.Params.style.darkestColor | default
-
-"#050505"
-}
-}
-;
-$dark-color:{
-{
-.Site.Params.style.darkColor | default
-
-"#141920"
-}
-}
-;
-$light-color:{
-{
-.Site.Params.style.lightColor | default
-
-"#afbac4"
-}
-}
-;
-$medium-color:{
-{
-.Site.Params.style.lightColor | default
-
-"#b5b17f"
-}
-}
-;
-$lightest-color:{
-{
-.Site.Params.style.lightestColor | default
-
-"#ffffff"
-}
-}
-;
-$primary-color:{
-{
-.Site.Params.style.primaryColor | default
-
-"#57cc8a"
-}
-}
-;
+$darkest-color: {{ .Site.Params.style.darkestColor | default "#050505" }};
+$dark-color: {{ .Site.Params.style.darkColor | default "#141920" }};
+$light-color: {{ .Site.Params.style.lightColor | default "#afbac4" }};
+$medium-color: {{ .Site.Params.style.lightColor | default "#b5b17f" }};
+$lightest-color: {{ .Site.Params.style.lightestColor | default "#ffffff" }};
+$primary-color: {{ .Site.Params.style.primaryColor | default "#57cc8a" }};
 
 @import 'base';
 

@@ -38,4 +38,4 @@ name = "LinkedIn"
 url = "https://www.linkedin.com/in/manosnikolaidis"
 
 [frontmatter]
-publishDate = [':git', ':fileModTime']
+publishDate = [":git", ":fileModTime"]

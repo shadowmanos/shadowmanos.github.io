@@ -9,5 +9,4 @@ big part of data science work!
 
 ### Tutorials
 
-1. [Operations on files](processingFiles/fileOperations.md)
-2. [Read and write file contents](processingFiles/lineOperations.md) 
+1. [Operations on files]({{< ref "fileOperations" >}})
