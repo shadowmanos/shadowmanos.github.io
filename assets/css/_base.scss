@@ -13,8 +13,13 @@ body {
   color: $light-color;
 }
 
-h1, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   color: $lightest-color;
+}
+
+h1 {
+  color: $lightest-color;
+  font-size: 2.0em;
 }
 
 h2 {
@@ -23,7 +28,9 @@ h2 {
 
 h3 {
   color: $lightest-color;
-  font-size: 0.95em;
+  font-size: 1.2em;
+  margin-top: 4.5em;
+  line-height: 3.0;
 }
 
 a {
