@@ -1,0 +1,41 @@
+baseURL = 'https://shadowmanos.github.io'
+languageCode = 'en-gb'
+title = 'Manos Nikolaidis'
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+[[menu.main]]
+identifier = "cv"
+name = "CV"
+url = "/cv/"
+weight = 3
+[[menu.main]]
+identifier = "exploreDataWithJava"
+name = "Explore data with Java"
+url = "/exploreDataWithJava/"
+weight = 4
+
+
+[params]
+author = "Manos Nikolaidis"
+description = "Software Engineer"
+[[params.social]]
+icon = "stackoverflow"
+name = "StackOverflow"
+url = "https://stackoverflow.com/users/1413133/manos-nikolaidis"
+[[params.social]]
+icon = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/manosnikolaidis"
+
+[frontmatter]
+publishDate = [':git', ':fileModTime']
