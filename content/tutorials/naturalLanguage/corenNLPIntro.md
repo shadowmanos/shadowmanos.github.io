@@ -15,7 +15,7 @@ To run these commands make sure you have [installed j'bang](https://github.com/m
 at your terminal do:
 
 ```bash
-jbang -i https://github.com/shadowmanos/shadowmanos.github.io/blob/main/content/tutorials/naturalLanguage/coreNLPIntro.jsh
+jbang -i https://raw.githubusercontent.com/shadowmanos/shadowmanos.github.io/main/content/tutorials/naturalLanguage/coreNLPIntro.jsh
 ```
 
 ### Documents, sentences and words
