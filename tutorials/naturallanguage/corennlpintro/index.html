@@ -1,4 +1,4 @@
-<!doctype html><html lang=en-gb><head><title>Play with Stanford CoreNLP's Simple API // Manos Nikolaidis</title><link rel="shortcut icon" href=/favicon.ico><meta charset=utf-8><meta name=generator content="Hugo 0.109.0"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Manos Nikolaidis"><meta name=description content="English grammar with Java instead of a universal translator"><link rel=stylesheet href=/css/main.min.c579b5c218f95251df1fca671436654e2746fa72fc6af50f0d5a372576ae6213.css><meta name=twitter:card content="summary"><meta name=twitter:title content="Play with Stanford CoreNLP's Simple API"><meta name=twitter:description content="English grammar with Java instead of a universal translator"><meta property="og:title" content="Play with Stanford CoreNLP's Simple API"><meta property="og:description" content="English grammar with Java instead of a universal translator"><meta property="og:type" content="article"><meta property="og:url" content="https://shadowmanos.github.io/tutorials/naturallanguage/corennlpintro/"><meta property="article:section" content="tutorials"><meta property="article:published_time" content="2023-01-04T21:53:17+00:00"></head><body><header class=app-header><a href=https://shadowmanos.github.io><img class=app-header-avatar src=/avatar.jpg alt="Manos Nikolaidis"></a>
+<!doctype html><html lang=en-gb><head><title>Play with Stanford CoreNLP's Simple API // Manos Nikolaidis</title><link rel="shortcut icon" href=/favicon.ico><meta charset=utf-8><meta name=generator content="Hugo 0.109.0"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Manos Nikolaidis"><meta name=description content="English grammar with Java instead of a universal translator"><link rel=stylesheet href=/css/main.min.982d401dbef4da75291ad7239e060ffd1776b593560a46f42a509ce21484ca08.css><meta name=twitter:card content="summary"><meta name=twitter:title content="Play with Stanford CoreNLP's Simple API"><meta name=twitter:description content="English grammar with Java instead of a universal translator"><meta property="og:title" content="Play with Stanford CoreNLP's Simple API"><meta property="og:description" content="English grammar with Java instead of a universal translator"><meta property="og:type" content="article"><meta property="og:url" content="https://shadowmanos.github.io/tutorials/naturallanguage/corennlpintro/"><meta property="article:section" content="tutorials"><meta property="article:published_time" content="2023-01-04T23:11:33+00:00"></head><body><header class=app-header><a href=https://shadowmanos.github.io><img class=app-header-avatar src=/avatar.jpg alt="Manos Nikolaidis"></a>
 <span class=app-header-title>Manos Nikolaidis</span><p>Software Engineer</p><nav class=app-header-menu><a class=app-header-menu-item href=/>Home</a>
 -
 <a class=app-header-menu-item href=/about/>About</a>
@@ -95,10 +95,10 @@ the <a href=https://en.wikipedia.org/wiki/Text_corpus>corpus</a> used to train t
 English, the algorithm depends a lot on the first letter being uppercase. CoreNLP performs NER tagging by calling
 the <code>nerTags</code> method:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var iAmCaptain = new Sentence(&#34;I&#39;m Captain Jean-Luc Picard, of the Federation Starship Enterprise&#34;)
 
-    Table.create(&#34;\n&#34;).
-        addColumns(
-            StringColumn.create(&#34;Words&#34;, iAmCaptain.words()),
-            StringColumn.create(&#34;NER tags&#34;, iAmCaptain.nerTags()))
+Table.create(&#34;\n&#34;).
+    addColumns(
+        StringColumn.create(&#34;Words&#34;, iAmCaptain.words()),
+        StringColumn.create(&#34;NER tags&#34;, iAmCaptain.nerTags()))
 </code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>      Words     |    NER tags    |
 </span></span><span style=display:flex><span>-------------------------------
 </span></span><span style=display:flex><span>          I  |             O  |
@@ -118,10 +118,10 @@ the <code>nerTags</code> method:</p><pre tabindex=0><code class=language-jshelll
 tags. &ldquo;Starship&rdquo; is probably more of a VEHICLE than an ORGANIZATION, so the training corpus probably didn&rsquo;t contain this
 term. &ldquo;Captain&rdquo; would still be identified as &ldquo;TITLE&rdquo; even if it was typed as &ldquo;captain&rdquo;. Another example:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var ensignSito = new Sentence(&#34;Ensign Sito Jaxa has been lost in the line of duty&#34;)
 
-    Table.create(&#34;\n&#34;).
-        addColumns(
-            StringColumn.create(&#34;Words&#34;, ensignSito.words()),
-            StringColumn.create(&#34;NER tags&#34;, ensignSito.nerTags()))
+Table.create(&#34;\n&#34;).
+    addColumns(
+        StringColumn.create(&#34;Words&#34;, ensignSito.words()),
+        StringColumn.create(&#34;NER tags&#34;, ensignSito.nerTags()))
 </code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span> Words   |  NER tags  |
 </span></span><span style=display:flex><span>-----------------------
 </span></span><span style=display:flex><span> Ensign  |    PERSON  |
@@ -146,16 +146,16 @@ the <code>sentiment</code> method:</p><pre tabindex=0><code class=language-jshel
     &#34;We seek peaceful coexistence&#34;,
     &#34;It&#39;s a good day to die&#34;)
 
-    var sentiments = sentences.stream().
-        map(Sentence::new).
-        map(Sentence::sentiment).
-        map(SentimentClass::toString).
-        toList()
+var sentiments = sentences.stream().
+    map(Sentence::new).
+    map(Sentence::sentiment).
+    map(SentimentClass::toString).
+    toList()
 
-    Table.create(&#34;\n&#34;).
-        addColumns(
-            StringColumn.create(&#34;Senntence&#34;, sentences),
-            StringColumn.create(&#34;Sentiment&#34;, sentiments))
+Table.create(&#34;\n&#34;).
+    addColumns(
+        StringColumn.create(&#34;Senntence&#34;, sentences),
+        StringColumn.create(&#34;Sentiment&#34;, sentiments))
 </code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>          Senntence            |  Sentiment  |
 </span></span><span style=display:flex><span>----------------------------------------------
 </span></span><span style=display:flex><span>        Live long and prosper  |    NEUTRAL  |
