@@ -1,0 +1,80 @@
+<!doctype html><html lang=en-gb><head><title>File operations // Manos Nikolaidis</title><link rel="shortcut icon" href><meta charset=utf-8><meta name=generator content="Hugo 0.109.0"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Manos Nikolaidis"><meta name=description content="Find, copy, move/rename and delete files with Java"><link rel=stylesheet href=/css/main.min.c579b5c218f95251df1fca671436654e2746fa72fc6af50f0d5a372576ae6213.css><meta name=twitter:card content="summary"><meta name=twitter:title content="File operations"><meta name=twitter:description content="Find, copy, move/rename and delete files with Java"><meta property="og:title" content="File operations"><meta property="og:description" content="Find, copy, move/rename and delete files with Java"><meta property="og:type" content="article"><meta property="og:url" content="https://shadowmanos.github.io/tutorials/processingfiles/fileoperations/"><meta property="article:section" content="tutorials"><meta property="article:published_time" content="2023-01-04T01:25:56+00:00"></head><body><header class=app-header><a href=https://shadowmanos.github.io><img class=app-header-avatar src=../../static/avatar.jpg alt="Manos Nikolaidis"></a>
+<span class=app-header-title>Manos Nikolaidis</span><p>Software Engineer</p><nav class=app-header-menu><a class=app-header-menu-item href=/>Home</a>
+-
+<a class=app-header-menu-item href=/about/>About</a>
+-
+<a class=app-header-menu-item href=/cv/>CV</a>
+-
+<a class=app-header-menu-item href=/exploredatawithjava/>Explore data with Java</a></nav><p></p><div class=app-header-social><a href=https://stackoverflow.com/users/1413133/manos-nikolaidis target=_blank rel="noreferrer noopener me"><svg viewBox="0 0 32 32" width="64" height="64" fill="none" color="#b5b17f" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link"><path d="M28.16 32H2.475V20.58H5.32v8.575h19.956V20.58h2.884z"/><path d="M8.477 19.8l13.993 2.923.585-2.806-13.993-2.923zm1.832-6.704 12.94 6.04 1.208-2.572-12.94-6.08zm3.586-6.353 10.99 9.12 1.832-2.183-10.99-9.12zM20.99.0l-2.3 1.715 8.536 11.46 2.3-1.715zM8.166 26.27H22.43v-2.845H8.166v2.845z"/></svg></a><a href=https://www.linkedin.com/in/manosnikolaidis target=_blank rel="noreferrer noopener me"><svg viewBox="0 0 24 24" fill="none" color="#b5b17f" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div></header><main class=app-container><article class=post><header class=post-header><h1 class=post-title>File operations</h1><h2 class=post-description>Find, copy, move/rename and delete files with Java</h2><div class=post-meta><div><svg viewBox="0 0 24 24" fill="none" color="#b5b17f" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Jan 4, 2023</div><div><svg viewBox="0 0 24 24" fill="none" color="#b5b17f" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock"><title>clock</title><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>3 min read</div></div></header><div class=post-content><h3 id=pre-filing>Pre-filing</h3><p>We&rsquo;ll see some simple one line examples on operations on files themselves without modifying contents. We&rsquo;ll just use
+standard Java classes.
+To run these commands make sure you have <a href=https://github.com/maxandersen/jbang#installation>installed j&rsquo;bang</a> and then
+at your terminal do:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>jbang -i https://github.com/shadowmanos/explore-data-with-java/blob/master/tutorials/processingFiles/fileOperations.jsh
+</span></span></code></pre></div><h3 id=list-folders-and-files>List folders and files</h3><p>First step is always to create
+a <a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html>Path</a> that represents a path to
+a file or folder, and in many ways supersedes the
+older <a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html>File</a> class. To create one from
+scratch, pass a <code>String</code> with the path. E.g. to make a <code>Path</code> out of your home folder:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var home = Path.of(System.getProperty(&#34;user.home&#34;))
+</code></pre><p>The following will list names of all non-hidden files only in your home folder without going into subfolders (we are
+making use of <a href=https://github.com/amaembo/streamex>StreamEx</a>):</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>StreamEx.of(Files.walk(home, 1)).
+    map(Path::toFile).
+    filter(File::isFile).
+    remove(File::isHidden).
+    map(File::getName).
+    toList()
+</code></pre><p><a href=https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html#walk(java.nio.file.Path,int,java.nio.file.FileVisitOption...)>walk()</a>
+will traverse (depth-first) the path going into folders up to the specified depth. 1 means only current folder.</p><p>To recursively search for files by name, try the following:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var someFile = StreamEx.of(Files.walk(home)).
+    map(Path::toFile).
+    filter(File::isFile).
+    filterBy(File::getName, &#34;someText.txt&#34;).
+    findFirst().
+    get()
+</code></pre><p>Note that with <code>first()</code> you can get a new <code>Path</code> representing a folder, and use it as a basis for future searches:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var pictures = StreamEx.of(Files.walk(home, 1)).
+    map(Path::toFile).
+    filter(File::isDirectory).
+    filterBy(File::getName, &#34;Pictures&#34;).
+    findFirst().
+    map(File::toPath).
+    get()
+</code></pre><p>You may list files in the &ldquo;Pictures&rdquo; folder (that we found above), sorted by when they were last modified, like this:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>StreamEx.of(Files.walk(pictures, 1)).
+    map(Path::toFile).
+    filter(File::isFile).
+    sortedBy(File::lastModified).
+    toList()
+</code></pre><p>We may want to filter files per the parent folder. For example, count Java source files ignoring files containing tests,
+in a multi-project source code folder. These will be in subfolders of more than one folder named <code>src/main/java</code> (
+slashes may be the other way around in other operating systems).</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>StreamEx.of(Files.walk(home)).
+    map(Path::toFile).
+    filter(File::isFile).
+    filter(f -&gt; f.getAbsolutePath().contains(&#34;src/main/java&#34;)).
+    filter(f -&gt; f.getName().endsWith(&#34;.java&#34;)).
+    count()
+</code></pre><p>Another useful op would be to find duplicates across different folders by name:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var fileCounts = StreamEx.of(Files.walk(home)).
+    map(Path::toFile).
+    filter(File::isFile).
+    groupingBy(File::getName, counting())
+    var duplicates = EntryStream.of(fileCounts).
+        filterValues(count -&gt; count &gt; 1).
+        keys().
+        toList()
+</code></pre><h3 id=size-matters>Size matters</h3><p>To get the size of a file in bytes:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>someFile.length()
+</code></pre><p>The above is not useful for folders. To get the size of all files in a folder we need to iterate over them:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>StreamEx.of(Files.walk(pictures, 1)).
+    map(Path::toFile).
+    filter(File::isFile).
+    mapToLong(File::length).
+    sum()
+</code></pre><p>From any file, you can get usage and size information for the whole disk:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>someFile.getFreeSpace()
+    someFile.getUsableSpace()
+    someFile.getTotalSpace()
+</code></pre><p>Expect usable space to be less than free space</p><h3 id=modify-files>Modify files</h3><p>To create a new empty folder:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var someFolder = pictures.resolve(&#34;someFolder&#34;)
+    someFolder.toFile().mkdir()
+</code></pre><p>To create a new empty file:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var someText = someFolder.resolve(&#34;someText.txt&#34;).toFile()
+    someText.createNewFile()
+</code></pre><p>you can chain two <code>resolve</code> calls, but you have to create a folder before creating a file within it.</p><p>We can rename and/or move a file by:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var movedFile = pictures.resolve(&#34;someFileMovedToDocs.txt&#34;).toFile()
+    someText.renameTo(movedFile)
+</code></pre><p>This method takes a <code>File</code> argument and since the file is under a different folder, it was moved as well as renamed. So
+it&rsquo;s similar to Unix <a href=https://en.wikipedia.org/wiki/Mv>mv</a> command. If you now type <code>someText</code> to inspect the variable,
+you&rsquo;ll see it still refers to the original path <code>$HOME/Pictures/someFolder/someText.txt</code> that no longer exists.
+Consequently, if you try to rename <code>someText</code> again it will fail and return <code>false</code>. We can re-create this file if we
+want, in the original folder, with the same command as above.</p><p>If we wanted to copy instead, keeping the original file:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>var copiedFile = Files.copy(someText.toPath(), someFolder.resolve(&#34;copyOfSomeText.txt&#34;)).toFile()
+</code></pre><p>If you regret copying the file, to get rid of it:</p><pre tabindex=0><code class=language-jshelllanguage data-lang=jshelllanguage>copiedFile.delete()
+</code></pre></div><div class=post-footer></div></article></main></body></html>
