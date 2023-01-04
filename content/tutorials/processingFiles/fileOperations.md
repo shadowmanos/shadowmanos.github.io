@@ -95,10 +95,10 @@ var fileCounts = StreamEx.of(Files.walk(home)).
     map(Path::toFile).
     filter(File::isFile).
     groupingBy(File::getName, counting())
-    var duplicates = EntryStream.of(fileCounts).
-        filterValues(count -> count > 1).
-        keys().
-        toList()
+var duplicates = EntryStream.of(fileCounts).
+    filterValues(count -> count > 1).
+    keys().
+    toList()
 ```
 
 ### Size matters
@@ -123,8 +123,8 @@ From any file, you can get usage and size information for the whole disk:
 
 ```jshelllanguage
 someFile.getFreeSpace()
-    someFile.getUsableSpace()
-    someFile.getTotalSpace()
+someFile.getUsableSpace()
+someFile.getTotalSpace()
 ```
 
 Expect usable space to be less than free space
@@ -135,14 +135,14 @@ To create a new empty folder:
 
 ```jshelllanguage
 var someFolder = pictures.resolve("someFolder")
-    someFolder.toFile().mkdir()
+someFolder.toFile().mkdir()
 ```
 
 To create a new empty file:
 
 ```jshelllanguage
 var someText = someFolder.resolve("someText.txt").toFile()
-    someText.createNewFile()
+someText.createNewFile()
 ```
 
 you can chain two `resolve` calls, but you have to create a folder before creating a file within it.
@@ -151,7 +151,7 @@ We can rename and/or move a file by:
 
 ```jshelllanguage
 var movedFile = pictures.resolve("someFileMovedToDocs.txt").toFile()
-    someText.renameTo(movedFile)
+someText.renameTo(movedFile)
 ```
 
 This method takes a `File` argument and since the file is under a different folder, it was moved as well as renamed. So

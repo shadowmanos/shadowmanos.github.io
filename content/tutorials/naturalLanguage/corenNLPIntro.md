@@ -105,10 +105,9 @@ in pairs. A nice library for that purpose is [Tablesaw](https://jtablesaw.github
 been included for your convenience  :
 
 ```jshelllanguage
-Table.create("\n").
-    addColumns(
-        StringColumn.create("Words", sentence.words()),
-        StringColumn.create("POS tags", sentence.posTags()))
+Table.create("\n").addColumns(
+    StringColumn.create("Words", sentence.words()),
+    StringColumn.create("POS tags", sentence.posTags()))
 ```
 
 ```text
@@ -205,10 +204,9 @@ the `nerTags` method:
 ```jshelllanguage
 var iAmCaptain = new Sentence("I'm Captain Jean-Luc Picard, of the Federation Starship Enterprise")
 
-Table.create("\n").
-    addColumns(
-        StringColumn.create("Words", iAmCaptain.words()),
-        StringColumn.create("NER tags", iAmCaptain.nerTags()))
+Table.create("\n").addColumns(
+    StringColumn.create("Words", iAmCaptain.words()),
+    StringColumn.create("NER tags", iAmCaptain.nerTags()))
 ```
 
 ```text
@@ -236,10 +234,9 @@ term. "Captain" would still be identified as "TITLE" even if it was typed as "ca
 ```jshelllanguage
 var ensignSito = new Sentence("Ensign Sito Jaxa has been lost in the line of duty")
 
-Table.create("\n").
-    addColumns(
-        StringColumn.create("Words", ensignSito.words()),
-        StringColumn.create("NER tags", ensignSito.nerTags()))
+Table.create("\n").addColumns(
+    StringColumn.create("Words", ensignSito.words()),
+    StringColumn.create("NER tags", ensignSito.nerTags()))
 ```
 
 ```text
@@ -290,10 +287,9 @@ var sentiments = sentences.stream().
     map(SentimentClass::toString).
     toList()
 
-Table.create("\n").
-    addColumns(
-        StringColumn.create("Senntence", sentences),
-        StringColumn.create("Sentiment", sentiments))
+Table.create("\n").addColumns(
+    StringColumn.create("Senntence", sentences),
+    StringColumn.create("Sentiment", sentiments))
 ```
 
 ```text
