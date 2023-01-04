@@ -15,7 +15,7 @@ To run these commands make sure you have [installed j'bang](https://github.com/m
 at your terminal do:
 
 ```bash
-jbang -i https://github.com/shadowmanos/explore-data-with-java/blob/master/tutorials/naturalLanguage/corenNLPIntro.jsh
+jbang -i {{< ref "naturalLanguage" >}}corenNLPIntro.jsh
 ```
 
 ### Documents, sentences and words

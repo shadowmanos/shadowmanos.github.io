@@ -19,5 +19,5 @@ But, I am doing my best to group them by affinity below:
 
 ### Contents
 
-1. [Natural Language Processing]({{< ref "naturalLanguageProcessing" >}})
+1. [Natural Language]({{< ref "naturalLanguage" >}})
 2. [File reading and writing]({{< ref "processingFiles" >}})

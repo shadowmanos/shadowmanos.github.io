@@ -12,7 +12,7 @@ To run these commands make sure you have [installed j'bang](https://github.com/m
 at your terminal do:
 
 ```bash
-jbang -i https://github.com/shadowmanos/explore-data-with-java/blob/master/tutorials/processingFiles/fileOperations.jsh
+jbang -i {{< ref "processingFiles" >}}fileOperations.jsh
 ```
 
 For text files this could be a comma separated list of data items in each line (a CSV format). E.g. the actor name,
@@ -67,5 +67,3 @@ Files.lines(kirkFile).
 That gives us the length of the longest line. The file will be released/closed after completion.
 
 ### Read binary file block by block
-
-
