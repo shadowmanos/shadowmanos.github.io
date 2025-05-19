@@ -39,3 +39,7 @@ url = "https://www.linkedin.com/in/manosnikolaidis"
 
 [frontmatter]
 publishDate = [":git", ":fileModTime"]
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
