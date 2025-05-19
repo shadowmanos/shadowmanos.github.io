@@ -6,10 +6,7 @@ draft: false
 
 ### Pre-filing
 
-We'll see some simple one line examples on operations on files themselves without modifying contents. We'll just use
-standard Java classes.
-To run these commands make sure you have [installed j'bang](https://github.com/maxandersen/jbang#installation) and then
-at your terminal do:
+We'll see some simple one line examples on operations on files themselves without modifying contents. We'll just use standard Java classes. To run these commands make sure you have [installed j'bang](https://github.com/maxandersen/jbang#installation) and then at your terminal do:
 
 ```bash
 jbang -i https://raw.githubusercontent.com/shadowmanos/shadowmanos.github.io/main/content/tutorials/processingFiles/fileOperations.jsh
@@ -17,18 +14,14 @@ jbang -i https://raw.githubusercontent.com/shadowmanos/shadowmanos.github.io/mai
 
 ### List folders and files
 
-First step is always to create
-a [Path](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html) that represents a path to
-a file or folder, and in many ways supersedes the
-older [File](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html) class. To create one from
-scratch, pass a `String` with the path. E.g. to make a `Path` out of your home folder:
+First step is always to create a [Path](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html) that represents a path to
+a file or folder, and in many ways supersedes the older [File](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html) class. To create one from scratch, pass a `String` with the path. E.g. to make a `Path` out of your home folder:
 
 ```jshelllanguage
 var home = Path.of(System.getProperty("user.home"))
 ```
 
-The following will list names of all non-hidden files only in your home folder without going into subfolders (we are
-making use of [StreamEx](https://github.com/amaembo/streamex)):
+The following will list names of all non-hidden files only in your home folder without going into subfolders (we are making use of [StreamEx](https://github.com/amaembo/streamex)):
 
 ```jshelllanguage
 StreamEx.of(Files.walk(home, 1)).
@@ -75,9 +68,7 @@ StreamEx.of(Files.walk(pictures, 1)).
     toList()
 ```
 
-We may want to filter files per the parent folder. For example, count Java source files ignoring files containing tests,
-in a multi-project source code folder. These will be in subfolders of more than one folder named `src/main/java` (
-slashes may be the other way around in other operating systems).
+We may want to filter files per the parent folder. For example, count Java source files ignoring files containing tests, in a multi-project source code folder. These will be in subfolders of more than one folder named `src/main/java` (slashes may be the other way around in other operating systems).
 
 ```jshelllanguage
 StreamEx.of(Files.walk(home)).
@@ -154,11 +145,7 @@ var movedFile = pictures.resolve("someFileMovedToDocs.txt").toFile()
 someText.renameTo(movedFile)
 ```
 
-This method takes a `File` argument and since the file is under a different folder, it was moved as well as renamed. So
-it's similar to Unix [mv](https://en.wikipedia.org/wiki/Mv) command. If you now type `someText` to inspect the variable,
-you'll see it still refers to the original path `$HOME/Pictures/someFolder/someText.txt` that no longer exists.
-Consequently, if you try to rename `someText` again it will fail and return `false`. We can re-create this file if we
-want, in the original folder, with the same command as above.
+This method takes a `File` argument and since the file is under a different folder, it was moved as well as renamed. So it's similar to Unix [mv](https://en.wikipedia.org/wiki/Mv) command. If you now type `someText` to inspect the variable, you'll see it still refers to the original path `$HOME/Pictures/someFolder/someText.txt` that no longer exists. Consequently, if you try to rename `someText` again it will fail and return `false`. We can re-create this file if we want, in the original folder, with the same command as above.
 
 If we wanted to copy instead, keeping the original file:
 
