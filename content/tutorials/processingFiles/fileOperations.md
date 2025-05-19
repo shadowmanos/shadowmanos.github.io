@@ -118,7 +118,7 @@ someFile.getUsableSpace()
 someFile.getTotalSpace()
 ```
 
-Expect usable space to be less than free space
+Expect usable space to be less than free space.
 
 ### Modify files
 
