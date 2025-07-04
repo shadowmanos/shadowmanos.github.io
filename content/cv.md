@@ -4,7 +4,7 @@
 
 ##### The best mobile provider in the UK.
 
-*London, UK (May 2023 — now)*
+*London, UK (May 2023 — June 2025)*
 
 Tech lead of the Identity team, responsible for authentication and personal details of users. Reviewing reports for security vulnerabilities and bugs, planning remediation, and regularly coding fixes myself. Designed and partially implemented new features including new authentication flows based on WebAuthn and Passkeys.
 
